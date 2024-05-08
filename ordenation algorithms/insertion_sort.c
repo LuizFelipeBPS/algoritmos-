@@ -20,6 +20,21 @@ void insertion_sort (int * v, int n) {
     
 }
 
+// insertion sort sem recursão 
+
+void insertion_sort(int* v, int n) {
+    for (int i = 1; i < n; i++) {
+        int j = i - 1;
+        int key = v[i]; 
+
+        while (j >= 0 && v[j] > key) {
+            troca(&v[j], &v[j + 1]); 
+            j--;
+        } 
+        v[j + 1] = key; 
+    }
+}
+
 int main() {
     int v[] = {4, 0, 3, 2, 1};
     int n = 5; 
