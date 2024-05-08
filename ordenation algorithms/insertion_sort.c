@@ -21,7 +21,7 @@ void insertion_sort (int * v, int n) {
 }
 
 // insertion sort sem recursão 
-
+/*
 void insertion_sort(int* v, int n) {
     for (int i = 1; i < n; i++) {
         int j = i - 1;
@@ -34,6 +34,7 @@ void insertion_sort(int* v, int n) {
         v[j + 1] = key; 
     }
 }
+*/
 
 int main() {
     int v[] = {4, 0, 3, 2, 1};
